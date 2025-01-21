@@ -41,6 +41,10 @@ testem.log
 .DS_Store
 Thumbs.db
 
+#BuildFile
+/dist
+
+
 # Firebase
 .firebase
 *-debug.log
