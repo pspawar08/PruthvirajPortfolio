@@ -12,5 +12,7 @@ import { ContactComponent } from './contact/contact.component';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  constructor() {}
+  constructor() {};
+    title = 'PruthvirajPortfolio'; // Add the title property here
+
 }

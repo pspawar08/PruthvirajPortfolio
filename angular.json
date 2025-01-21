@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "public": {
+    "PruthvirajPortfolio": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/public",
+            "outputPath": "dist/PruthvirajPortfolio",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -57,14 +57,14 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "buildTarget": "public:build"
+            "buildTarget": "PruthvirajPortfolio:build"
           },
           "configurations": {
             "production": {
-              "buildTarget": "public:build:production"
+              "buildTarget": "PruthvirajPortfolio:build:production"
             },
             "development": {
-              "buildTarget": "public:build:development"
+              "buildTarget": "PruthvirajPortfolio:build:development"
             }
           },
           "defaultConfiguration": "development"
