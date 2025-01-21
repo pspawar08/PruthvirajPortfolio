@@ -36,7 +36,7 @@ This portfolio is built using Angular for the front-end and hosted on Firebase. 
    ```
 3. **Navigate to the project directory**:
    ```
-   cd your-repo-name
+   cd PruthvirajPortfolio/public
    ```
 4. **Install dependencies**:
    ```
