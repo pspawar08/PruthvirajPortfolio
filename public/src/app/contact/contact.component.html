@@ -1,0 +1,62 @@
+<!-- Contact -->
+<section class="contact r-p bg-sec" id="contact">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col way-fade-left">
+                <h2>Contact Us</h2>
+                <p>Feel free to contact me.</p>
+            </div>
+        </div>
+        <div class="row mt-5 way-fade-left">
+            <div class="col-md-4">
+                <div class="r-icon"><i class="fas fa-mobile-alt"></i></div>
+                <div class="text-center">
+                    <h5>Call Us</h5>
+                    <p>+91 8605663815</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="r-icon"><i class="far fa-envelope"></i></div>
+                <div class="text-center">
+                    <h5>Email</h5>
+                    <p class="text-muted">pruthvirajpawar30&#64;gmail.com</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="r-icon"><i class="fas fa-map-pin"></i></div>
+                <div class="text-center">
+                    <h5>Mailing Address</h5>
+                    <p class="text-muted">Flat no. 04, Nisarg Appartment, Indrapuri Society, Talegaon-Dabhade, 410506
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col">
+                <form #contactForm="ngForm" (ngSubmit)="submitForm(contactForm)" id="contactForm">
+                    <div class="form-row way-fade-left">
+                        <div class="form-group col-md-6">
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Name" ngModel
+                                required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Email" ngModel
+                                required>
+                        </div>
+                    </div>
+                    <div class="form-group way-fade-left">
+                        <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject"
+                            ngModel required>
+                    </div>
+                    <div class="form-group way-fade-left">
+                        <textarea class="form-control" id="message" name="message" rows="7" placeholder="Your Message"
+                            style="resize:none;" ngModel required></textarea>
+                    </div>
+                    <button type="submit" class="btn r-btn float-right way-fade-left">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
