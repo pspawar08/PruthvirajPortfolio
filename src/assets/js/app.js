@@ -36,32 +36,6 @@ $(window).on('scroll',function(){
   }
 });
 
-const contactForm = document.getElementById('contactForm');
-contactForm.addEventListener('submit', async (e) => {
-  e.preventDefault();
-
-  const name = document.getElementById('name').value;
-  const email = document.getElementById('email').value;
-  const subject = document.getElementById('subject').value;
-  const message = document.getElementById('message').value;
-  try {
-
-    await addDoc(collection(db, "contacts"), {
-      name: name,
-      email: email,
-      subject: subject,
-      message: message,
-      timestamp: new Date() 
-    });
-
-    alert("Message submitted successfully!");
-    contactForm.reset();
-  } catch (error) {
-    console.error("Error submitting message: ", error);
-    alert("Failed to submit message. Please try again.");
-  }
-});
-
 var waypoint = new Waypoint({
   element: document.getElementById('experience'),
   handler: function() {
@@ -77,7 +51,7 @@ var waypoint = new Waypoint({
 
 
   },
-   offset: '90%'
+  offset: '90%'
 });
 
 var $child = $('.way-fade-up').children();
