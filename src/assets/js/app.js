@@ -129,7 +129,9 @@ $('.owl-carousel').owlCarousel({
 
 $('a').smoothScroll({
 
-  speed:2000,
+  speed:1000,
+  offset:0,
+  easing: 'swing'
 });
 
 });
